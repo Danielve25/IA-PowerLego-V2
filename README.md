@@ -8,6 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 add envirment variables
+<br>
 VITE_GOOGLE_API_KEY=
 <br>
 VITE_THINGSPEAK_API_KEY=
