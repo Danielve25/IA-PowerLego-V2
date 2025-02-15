@@ -28,7 +28,7 @@ const DataDisplay = () => {
         <div>
             {ChannelData &&(
                 <div>
-                    <h1>Estancion Metereologica</h1>
+                    <h1>{ChannelData.name.split(/(?=[A-Z])/).join(' ')}</h1>
                     <h2>{ChannelData.description}</h2>
                 </div>
             )}
