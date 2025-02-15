@@ -7,6 +7,18 @@ const genAI = new GoogleGenerativeAI(API_KEY_GOOGLE);
 const model = genAI.getGenerativeModel({model: "gemini-1.5-flash"});
 
 const ChatBot = () => {
+    const [DatosSensores, setDatosSensores] = useState()
+    const [ChannelData, setChannelData] = useState()
+    useEffect(() => {
+        axios.get(`https://api.thingspeak.com/channels/2736935/feeds.json?api_key=${API_KEY_THINGSPEAK}&results=1`)
+            .then(({ data }) => {
+                console.log(data.channel);
+                console.log(data.feeds[0]);
+                setChannelData(data.channel)
+                setDatosSensores(data.feeds[0]);
+            })
+            .catch((err) => console.log("error al obtener datos"));
+    }, []);
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
 
