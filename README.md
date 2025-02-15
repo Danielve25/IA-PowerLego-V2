@@ -9,4 +9,5 @@ Currently, two official plugins are available:
 
 add envirment variables
 VITE_GOOGLE_API_KEY=
+<br>
 VITE_THINGSPEAK_API_KEY=
