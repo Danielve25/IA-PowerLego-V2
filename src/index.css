@@ -37,7 +37,7 @@
 }
 .chatBot {
     border-radius: 1rem 5px 0px 0px;
-    max-height: 500px;
+    max-height: 400px;
     max-width: 100vh;
     min-width: 100%;
     background-color: white;
@@ -147,4 +147,11 @@
 }
 .cloudIcon{
     margin-right: 10px;
+}
+.IA-container{
+    display: flex;
+}
+.imgIA{
+    aspect-ratio: 1/1;
+    height: 70px;
 }

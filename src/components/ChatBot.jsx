@@ -3,8 +3,8 @@ import {GoogleGenerativeAI} from "@google/generative-ai";
 import axios from "axios";
 import {Temporal} from "temporal-polyfill";
 import SendIcon from "./icons/Send";
-
-const AIModel = "gemini-2.0-flash";
+import Avatar from "./icons/Avatar.png";
+const AIModel = "gemini-1.5-flash";
 const API_KEY_GOOGLE = import.meta.env.VITE_GOOGLE_API_KEY;
 const API_KEY_THINGSPEAK = import.meta.env.VITE_THINGSPEAK_API_KEY;
 
@@ -74,9 +74,13 @@ Bot: ${msg.bot}`
                         <p className="ME">
                             <strong>Tú: </strong> {msg.user} <br /><small>{msg.timestamp}</small>
                         </p>
-                        <p className="IA">
-                            <strong>Bot:</strong> {msg.bot} <br /><small>{msg.timestamp}</small>
-                        </p>
+                        <div  className="IA-container">
+                            <img className="imgIA" src={Avatar}  alt="" />
+                            <p className="IA">
+                                {msg.bot} <br /><small>{msg.timestamp}</small>
+                            </p>
+                        </div>
+                        
                     </div>
                 ))}
             </div>
