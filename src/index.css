@@ -38,7 +38,8 @@
 .chatBot {
     border-radius: 1rem 5px 0px 0px;
     max-height: 500px;
-    max-width: 600px;
+    max-width: 100vh;
+    min-width: 100%;
     background-color: white;
     padding-left: 10px;
     color: white;
@@ -85,7 +86,9 @@
     background-color: rgb(228, 228, 228); /* bg-white */
     padding: 1rem; /* p-4 */
     border-radius: 10px 10px 10px 10px; /* Valor por defecto */
-    font-size: 1.125rem; /* Centrar el contenido horizontalmente */
+    font-size: 1.125rem;
+    max-width: 100vh;
+    min-width: 100%; /* Centrar el contenido horizontalmente */
 }
 .Message-Area {
     display: flex;
@@ -106,4 +109,42 @@
 }
 .icon-tabler-brand-telegram{
     margin-left: 10px;
+}
+.Data-Display-Container{
+    color: white;
+}
+.TermoIcon{
+    transform: rotate(45deg);
+}
+.Data-Display-Container ul li{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    margin: 16px;
+}
+.Data-Display-Container div h1{
+    text-align: center;
+}
+.Data-Display-Container div h2{
+    text-align: center;
+}
+.MapIcon{
+    margin-right: 10px;
+}
+.TermoIcon{
+    margin-right: 10px;
+}
+.HumidityIcon{
+    margin-right: 10px;
+}
+.WaterTemperatureIcon{
+    margin-right: 10px;
+}
+.cloudIconRain{
+    margin-right: 10px;
+}
+.cloudIcon{
+    margin-right: 10px;
 }
