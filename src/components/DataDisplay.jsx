@@ -25,7 +25,7 @@ const DataDisplay = () => {
     }, []);
 
     return (
-        <div>
+        <div className='Data-Display-Container'>
             {ChannelData &&(
                 <div>
                     <h1>{ChannelData.name.split(/(?=[A-Z])/).join(' ')}</h1>

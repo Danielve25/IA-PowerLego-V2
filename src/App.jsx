@@ -4,8 +4,10 @@ import ChatBot from './components/ChatBot'
 const App = () => {
   return (
     <>
+      <div className='all-container'>
         <DataDisplay/>
         <ChatBot/>
+      </div>
     </>
   )
 }

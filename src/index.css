@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+#root {
+  background-color: #242424;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-Send {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: #ef4444;
+  color: white;
+  cursor: pointer;
+  justify-self: center;
+  box-shadow: 0 10px 15px -3px rgba(239, 68, 68, 0.5);
+  width: 100px;
+  margin-top: 10px;
+  transition: all 0.2s ease; /* Añadir margen superior para separación */
+}
+.tex {
+  display: flex;
+  background-color: white;
+}
+.chatBot {
+  border-radius: 1rem 5px 0px 0px;
+  max-height: 500px;
+  max-width: 600px;
+  background-color: white;
+  color: white;
+  overflow-y: scroll;
+}
+.chatBot::-webkit-scrollbar-thumb {
+  background-color: red;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;
+}
+.chatBot::-webkit-scrollbar {
+  width: 16px;
+}
+.ME {
+  justify-self: end;
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 10px 10px 0px 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.IA {
+  background-color: #e3f2fd;
+  color: black;
+  padding: 10px;
+  border-radius: 10px 10px 10px 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.btn-Send:hover {
+  background-color: #f87171;
+  transform: scale(1.1);
+}
+.btn-Send:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: 0 0px 0px 0px rgba(239, 68, 68, 0.5);
+}
+.Message-Area.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(228, 228, 228); /* bg-white */
+  padding: 1rem; /* p-4 */
+  border-radius: 10px 10px 10px 10px; /* Valor por defecto */
+  font-size: 1.125rem; /* Centrar el contenido horizontalmente */
+}
+.Message-Area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(228, 228, 228); /* bg-white */
+  padding: 1rem; /* p-4 */
+  border-radius: 0px 0px 10px 10px; /* Valor por defecto */
+  font-size: 1.125rem;
+}
+.TextArea {
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
