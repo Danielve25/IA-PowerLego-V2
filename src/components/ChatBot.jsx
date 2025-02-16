@@ -90,7 +90,7 @@ Bot: ${msg.bot}`
                     onChange={(e) => setInput(e.target.value)}
                 />
                 <button className="btn-Send" onClick={sendMessage} disabled={!input.trim()}>
-                    Enviar
+                    Enviar <SendIcon/>
                 </button>
             </div>
         </div>
