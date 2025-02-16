@@ -17,8 +17,6 @@ const DataDisplay = () => {
             .then(({data}) => {
                 setAllSensor(data.feeds[0]);
                 setChannelData(data.channel)
-                console.log(data.channel)
-                console.log(data.feeds[0]);
             })
             .catch((err) => console.log("error al obtener datos"));
         };
